@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Multer - uploadImages</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+</head>
+<body>
+
+    <h1 class="display-4 text-center p-4">Upload your images</h1>
+    <div class="row my-auto">
+        <div class="col-md-4 offset-md-4">
+            <div class="card card-body shadow">
+                <form action="/upload/" method='POST' enctype="multipart/form-data">
+                <div class="form-group">
+                    <input 
+                        type="file" 
+                        name="image"
+                        class="form-control">
+                </div>
+                <button class="btn btn-primary btn-lg">UPLOAD</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
